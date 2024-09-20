@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+ 
+
 nav {
     position: fixed;
     top: 0;
@@ -13,6 +15,18 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
+
+nav h1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2292be;
+    padding: 15px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+ 
  
 nav h2 {
     color: white;
@@ -111,3 +125,4 @@ input[type="radio"] + label {
         font-size: 14px;
     }
 }
+

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Categoria</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c0f408d1cc.js" crossorigin="anonymous"></script>
 </head>
 <body>
    
@@ -14,19 +15,29 @@
  
     
     <div class="container">
-        <form action="/cadastrar_categoria"method ="POST">
+        <form action="/cadastrar_categoria" method ="POST">
             <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome" maxlength="40" required><br><br>
  
-            <label for="tipo">Tipo:</label><br>
-            <input type="radio" id="tipo1" name="tipo" value="0" required> Tipo 1<br>
-            <input type="radio" id="tipo2" name="tipo" value="1" required> Tipo 2<br><br>
+            <label for="ds_lancamento">Descrição:</label><br>
+        <input type="text" id="ds_lancamento" name="ds_lancamento" maxlength="40" required><br><br>
  
+        <label for="fk_Tipo">Usuário:</label><br>
+        <select id="fk_Tipo" name="fk_Tipo" required>
+
+            <label for="tipo">Tipo:</label><br>
+            <option >Selecione</option>
+            <option value="1">Tipo 1</option>
+            <option value="2">Tipo 2</option>
+            <option value="3">Outros</option>
+        </select><br><br>
+        
             <label for="descricao">Descrição:</label><br>
             <input type="text" id="descricao" name="descricao" maxlength="30"><br><br>
  
             <button type="submit">Cadastrar Categoria</button>
         </form>
+
     </div>
 </body>
 </html>
